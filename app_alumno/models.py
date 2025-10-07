@@ -7,6 +7,7 @@ class Alumno(models.Model):
     edad = models.IntegerField()
     email = models.EmailField(unique=True)
    
+   
 
     def __str__(self):
         return f"{self.nombre} {self.email}"
